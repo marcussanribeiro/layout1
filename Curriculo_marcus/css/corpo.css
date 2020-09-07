@@ -1,0 +1,74 @@
+/*Formatação do Conteudo*/
+.corpo{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color:rgba(198, 174, 174, 0.9);
+    
+}
+/*Configuração das caixas*/
+.item-corpo1{
+    border: 2px solid black;
+    width: 28%;
+    height: 30.5vh;  
+}
+/*Imagens de propaganda*/
+#propaganda{
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  z-index: 0;
+}
+/*Formatacao Imagem*/
+#img{
+    width: 98.7%;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 0.5%;
+}
+/*Caixas das flexboxs*/
+.item-corpo1:nth-child(n +1){
+    background-color: rgba(240, 128, 128);
+    margin: 3% 1% 1% 3%;
+    border-radius: 10px;
+}
+
+/*Titulo Central*/
+.titulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+/*titulos das caixas*/
+.subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(245, 244, 243, 0.9);
+}
+
+
+
+
+@media screen and (max-width:800px){
+
+    .corpo{
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(198, 174, 174, 0.9);
+        
+    }
+    .item-corpo1{
+        border: 2px solid black;
+        width: 99%;
+        height: 30.5vh;  
+        
+    }
+    .item-corpo1:nth-child(n +1){
+        background-color: rgba(240, 128, 128);
+        margin: 0% 1% 1% 0%;
+        border-radius: 10px;
+    }
+}

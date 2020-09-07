@@ -1,0 +1,21 @@
+/*Rodapé*/
+footer{
+    height: 9.4vh;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(240, 128, 128, 0.9);
+
+}
+/*Responsividade do Rodapé*/
+@media screen and (max-width:800px){
+    footer{
+      display: flex;
+      flex-direction: column;
+      background-color: yellow(2, 2, 2, 0.7);
+      flex: 1;
+    }
+  
+  }
